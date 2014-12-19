@@ -75,11 +75,24 @@ The final output data contains the averages of the variables in the intermediate
 
 1. subject - integer(1-30) designating which of the 30 subjects the observations apply to
 2. activity - character(WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) describing which of the activities the observations apply to
-3. tBodyAcc.Mean...XYZ
-4. tGravityAcc.Mean...XYZ
-5. tBodyAccJerk.Mean...XYZ
-6. tBodyGyro.Mean...XYZ
-7. tBodyGyroJerk.Mean...XYZ
+3. tBodyAcc.mean...XYZ
+4. tGravityAcc.mean...XYZ
+5. tBodyAccJerk.mean...XYZ
+6. tBodyGyro.mean...XYZ
+7. tBodyGyroJerk.mean...XYZ
+8. tBodyAccMag.mean
+9. tGravityAccMag.mean
+10. tBodyAccJerkMag.mean
+11. tBodyGyroMag.mean
+12. tBodyGyroJerkMag.mean
+13. fBodyAcc.mean...XYZ
+14. fBodyAccJerk.mean...XYZ
+15. fBodyGyro.mean...XYZ
+16. fBodyAccMag.mean
+17. fBodyAccJerkMag.mean
+18. fBodyGyroMag.mean
+19. fBodyGyroJerkMag.mean
+20. 
 
 
 
