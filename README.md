@@ -22,6 +22,7 @@ into my work directory, the steps in the R script begin.
 3.  The result of step 2. was used to add descriptive column headings to the xTest and xTrain dataframes.  The column heading "activity" was added to the yTest and yTrain dataframes.  The column heading "subject" was added to the subject dataframes.
 4.  Columns containing mean and standard deviation data were selected from the xTest and xTrain dataframes.
 5.  The dataframes containing subject, activity, mean and standard deviation data were combined into one dataframe for each of the test and train dataframes.  Then an rbind was used to join the resulting 2 dataframes into one dataframe called testtrain_Data.
+6.  Extraneous periods "." in the column headings were removed
 6.  The "activity" column in testtrain_Data contains values 1-6 which correspond to the 6 rows in the activityLabels dataframe. The second column in activityLabels contains the description which was used to replace the integer value in testtrain_Data.
 7.  A new dataframe was then created using the group_by and summarise_each functions to create the averages of all the mean and standard deviations grouped by subject and activity.
 8.  Finally, the dataframe created in step 7. is written to my work directory as "tidydata.txt"
