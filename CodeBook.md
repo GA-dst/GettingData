@@ -71,45 +71,44 @@ The final output data contains the averages of the variables in the intermediate
 
 ###Variables
 
-'...XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+'.XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 1. subject - integer(1-30) designating which of the 30 subjects the observations apply to
 2. activity - character(WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) describing which of the activities the observations apply to
-3. tBodyAcc.mean...XYZ
-4. tGravityAcc.mean...XYZ
-5. tBodyAccJerk.mean...XYZ
-6. tBodyGyro.mean...XYZ
-7. tBodyGyroJerk.mean...XYZ
+3. tBodyAcc.mean.XYZ
+4. tGravityAcc.mean.XYZ
+5. tBodyAccJerk.mean.XYZ
+6. tBodyGyro.mean.XYZ
+7. tBodyGyroJerk.mean.XYZ
 8. tBodyAccMag.mean
 9. tGravityAccMag.mean
 10. tBodyAccJerkMag.mean
 11. tBodyGyroMag.mean
 12. tBodyGyroJerkMag.mean
-13. fBodyAcc.mean...XYZ
-14. fBodyAccJerk.mean...XYZ
-15. fBodyGyro.mean...XYZ
+13. fBodyAcc.mean.XYZ
+14. fBodyAccJerk.mean.XYZ
+15. fBodyGyro.mean.XYZ
 16. fBodyAccMag.mean
 17. fBodyAccJerkMag.mean
 18. fBodyGyroMag.mean
 19. fBodyGyroJerkMag.mean
-20. 
+20. tBodyAcc.std.XYZ
+21. tGravityAcc.std.XYZ
+22. tBodyAccJerk.std.XYZ
+23. tBodyGyro.std.XYZ
+24. tBodyGyroJerk.std.XYZ
+25. tBodyAccMag.std
+26. tGravityAccMag.std
+27. tBodyAccJerkMag.std
+28. tBodyGyroMag.std
+29. tBodyGyroJerkMag.std
+30. fBodyAcc.std.XYZ
+31. fBodyAccJerk.std.XYZ
+32. fBodyGyro.std.XYZ
+33. fBodyAccMag.std
+34. fBodyAccJerkMag.std
+35. fBodyGyroMag.std
+36. fBodyGyroJerkMag.std
 
 
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
