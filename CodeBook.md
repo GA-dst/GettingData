@@ -71,10 +71,14 @@ The final output data contains the averages of the variables in the intermediate
 
 ###Variables
 
-'.XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 1. subject - integer(1-30) designating which of the 30 subjects the observations apply to
-2. activity - character(WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) describing which of the activities the observations apply to
+2. activity - character(WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) describing which of the activities the observations apply to.
+ 
+The following variables are the averages of the mean and standard deviations of the measurements described in Source Data above
+
+'.XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
 3. tBodyAcc.mean.XYZ
 4. tGravityAcc.mean.XYZ
 5. tBodyAccJerk.mean.XYZ
