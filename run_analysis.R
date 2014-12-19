@@ -11,11 +11,12 @@ subjectTrain <- read.table("./UCI HAR Dataset/train/subject_train.txt")
 activityLabels <- read.table("./UCI HAR Dataset/activity_labels.txt")
 features <- read.table("./UCI HAR Dataset/features.txt")
 
-### make features valid and unique to use as column headings and correct original
+### make features valid and unique to use as column headings, correct original
 ### source errors such as "BodyBody" with "Body"
 
 names <- make.names(features$V2, unique = TRUE, allow_ = TRUE)
 names <- gsub("BodyBody", "Body", names)
+
 
 ### add descriptive column headings to Test dataframes and Train dataframes
 
@@ -39,6 +40,12 @@ trainStd <- select(xTrain, contains(".std..", ignore.case = TRUE))
 testData <- cbind(subjectTest, yTest, testMean, testStd)
 trainData <- cbind(subjectTrain, yTrain, trainMean, trainStd)
 testtrain_Data <- rbind(testData, trainData)
+
+### remove any extraneous "." (periods) in column headings caused by the make.names 
+### function
+
+colnames(testtrain_Data) <- gsub("mean..", "mean", colnames(testtrain_Data))
+colnames(testtrain_Data) <- gsub("std..", "std", colnames(testtrain_Data))
 
 ### Replace activities with descriptive activity names
 ###
